@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const Work = ({title, image, description, video}) => {
+const Work = ({title, image}) => {
     
 
     
@@ -12,11 +12,11 @@ const Work = ({title, image, description, video}) => {
     return (
         
             <div className='w-screen h-auto p-1 relative
-                            sm:w-[420px] sm:h-[236px]'>
+                            sm:w-[420px] sm:h-[224px]'>
                 <div className='w-full h-full absolute bg-white opacity-0 top-0 left-0 hover:opacity-70 transition-opacity grid place-items-center cursor-pointer'>
                     <h3 className='font-poppins font-bold text-xl'> {title} </h3>
                 </div>
-                <img src={image} className='w-full '>
+                <img src={image} className='h-full object-cover '>
                     
                 </img>
             </div>
