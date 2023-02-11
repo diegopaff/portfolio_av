@@ -29,13 +29,12 @@ const WorkContainer = () => {
   }
 
   return (
-    <div className='flex flex-col items-center justify-center gap-6 max-w-[1600px] mx-auto'>
-      <h2 className='text-black font-poppins font-semibold'> Trabajos Realizados </h2>
+    <div className='flex flex-col items-center gap-6 max-w-[1600px] mx-auto mb-14 min-h-[calc(100vh-212px)]'>
+      <h2 className='text-black dark:text-white font-poppins font-bold text-2xl mt-6'> Últimos trabajos </h2>
 
-      <div className='flex flex-col
-                      '>
-        <h3 className='font-poppins font-bold '> Filtrar por Categoría </h3>
-        <select className='w-[150px]' onChange={filterOnChangeHandler}>
+      <div className='flex flex-col'>
+        <h3 className='font-poppins font-regular ml-1 text-black dark:text-white'> Filtrar por Categoría </h3>
+        <select className='w-[200px] ml-1' onChange={filterOnChangeHandler}>
           {videoTypes.map((item)=> (
             <option value={item.value}> {item.title} </option>
           ))}
@@ -43,18 +42,18 @@ const WorkContainer = () => {
       
             
         {/* Listado de todos los videos de la base */}
-        <div className='grid grid-cols-1
+        <div className='grid grid-cols-1 mt-3
                       sm:grid-cols-3'>
-          {filterVideos.map((item)=> (
+          {filterVideos.map((item, index)=> (
 
-            (<Link to={`/work/${item.value}`}>
+            <Link to={`/work/${item.value}`}>
               <Work 
                   key={item.id} 
                   title={item.title}
                   image={item.thumbnail}
                   description={item.description}
                   video={item.video}/>
-            </Link>)
+            </Link>
             
               
           ))}
