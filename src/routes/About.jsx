@@ -10,7 +10,7 @@ const About = () => {
       </p>
       <div className='rounded-full overflow-hidden w-[80vw] h-[80vw]
       sm:w-[50vh] sm:h-[50vh]'>
-        <img className='h-full object-cover tranlate-y-[-100px]' src='../../public/profilePicture.jpg'></img>
+        <img className='h-full object-cover tranlate-y-[-100px]' src='https://i.ibb.co/ZxJT4fm/profile-Picture.jpg'></img>
       </div>
     </div>
   )
