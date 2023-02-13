@@ -23,7 +23,7 @@ const WorkDetail = () => {
     }, [workId])
    
   return (
-    <div className='flex flex-col items-center w-screen px-2 gap-5'>
+    <div className='flex flex-col items-center w-screen px-2 gap-5 h-[calc(100vh-157px)]'>
         <div className='w-full max-w-[1600px]'>
             <iframe src={video.video} className="w-full aspect-video" allowFullScreen></iframe>
         </div>
