@@ -23,14 +23,14 @@ const WorkDetail = () => {
     }, [workId])
    
   return (
-    <div className='flex flex-col items-center w-screen px-2 gap-5 h-[calc(100vh-157px)]'>
+    <div className='flex flex-col items-center w-screen px-2 gap-5 h-[calc(100vh-157px)] sm:h-auto'>
         <div className='w-full max-w-[1600px]'>
             <iframe src={video.video} className="w-full aspect-video" allowFullScreen></iframe>
         </div>
         <div className='flex flex-col font-poppins w-full max-w-[1600px] gap-5'>
-            <div className="flex items-baseline font-poppins gap-5">
-                <h3 className='font-semibold text-3xl text-black dark:text-white'>{video.title}</h3>
-                <p className='font-light text-sm text-gray-600 dark:text-gray-300 '> {`( ${video.rol} )`}</p>
+            <div className="flex items-baseline font-poppins gap-2 sm:gap-5">
+                <h3 className='font-semibold text-2xl sm:text-3xl text-black dark:text-white'>{video.title}</h3>
+                <p className='font-light text-xs sm:text-sm text-gray-600 dark:text-gray-300 '> {`( ${video.rol} )`}</p>
             </div>
             <p className='font-regular text-base text-black dark:text-white'>{video.description}</p>
         </div>
