@@ -55,6 +55,17 @@ export const videos = [
         video: 'https://drive.google.com/file/d/1lqpz0CkMDXakVuztTGZJZCPIIpm2AsKy/preview',
     },
     {
+        id: 'Shambies1',
+        title: 'Shambies en Gallager',
+        category: 'socialMedia',
+        value: 'ShambiesGallagher',
+        description: 'Cobertura del show y edición de video para reel de instagram de la banda.',
+        /* thumbnail: '../../public/EnergyDrinkDance.jpg', */
+        thumbnail: 'https://i.ibb.co/XtRpky2/Shambies-en-gallager.png',
+        rol: 'Edición y filmación',
+        video: 'https://drive.google.com/file/d/1Jygh--GEic3HkKW29q_t2gtEBdK0lNUo/preview',
+    },
+    {
         id: '6',
         title: 'Ride Pico Delivery',
         category: 'socialMedia',
