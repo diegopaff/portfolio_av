@@ -1,5 +1,18 @@
 export const videos = [
   {
+    id: "13",
+    title: "Video institucional GSK - Avamys",
+    category: "corporativo",
+    value: "Vipermed2",
+    description:
+      "Edición de video de producto con el fin de presentar en un evento.",
+    /* thumbnail: '../../public/traslado.jpg', */
+    thumbnail: "https://i.ibb.co/94gHWPh/GSKavamys.jpg",
+    rol: "Edición",
+    video:
+      "https://drive.google.com/file/d/1g_uHo6GvU7Xqp5vZh_o_dZjds0VbmHSm/preview",
+  },
+  {
     id: "12",
     title: "Video institucional GSK",
     category: "corporativo",
@@ -184,8 +197,6 @@ export const videos = [
       "https://drive.google.com/file/d/10W_vYEh_LqVE6PRzu4qe1kMJ_8wv4kla/preview",
   },
 ];
-
-videos.map;
 
 export const navLinks = [
   {
